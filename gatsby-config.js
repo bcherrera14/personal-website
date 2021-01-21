@@ -23,6 +23,7 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-offline`,
+    `gatsby-plugin-fontawesome-css`,
     `gatsby-plugin-netlify`,
     // {
     //   resolve: `gatsby-plugin-gtag`,
@@ -75,6 +76,29 @@ module.exports = {
         options: {
           emitWarning: true,
           failOnError: false,
+        },
+      },
+    },
+    {
+      resolve: "gatsby-plugin-prettier-eslint",
+      options: {
+        prettier: {
+          patterns: [
+            // the pattern "**/*.{js,jsx,ts,tsx}" is not used because we will rely on `eslint --fix`
+            "**/*.{css,scss,less}",
+            "**/*.{json,json5}",
+            "**/*.{graphql}",
+            "**/*.{md,mdx}",
+            "**/*.{html}",
+            "**/*.{yaml,yml}",
+          ],
+        },
+        eslint: {
+          patterns: "**/*.{js,jsx,ts,tsx}",
+          customOptions: {
+            fix: true,
+            cache: true,
+          },
         },
       },
     },

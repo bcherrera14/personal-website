@@ -17,6 +17,7 @@ if (typeof window !== "undefined") {
 
 const StyledLayoutWrapper = styled.div`
   width: 100%;
+  max-width: 2000px;
   min-height: 100vh;
   margin: 0 auto;
   display: grid;

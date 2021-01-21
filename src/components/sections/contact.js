@@ -2,9 +2,10 @@ import React, { useRef } from "react"
 import PropTypes from "prop-types"
 import styled from "styled-components"
 import Img from "gatsby-image"
+import MyForm from "../myform"
+
 import { MDXRenderer } from "gatsby-plugin-mdx"
 import { motion } from "framer-motion"
-
 import { useOnScreen } from "../../hooks"
 import ContentWrapper from "../../styles/contentWrapper"
 import Underlining from "../../styles/underlining"
@@ -80,7 +81,8 @@ const Contact = ({ content }) => {
       <StyledContentWrapper>
         <h3>{frontmatter.title}</h3>
         <MDXRenderer>{body}</MDXRenderer>
-        <div className="profile">
+        <MyForm />
+        {/* <div className="profile">
           <Img
             className="avatar"
             fluid={frontmatter.profileImage.childImageSharp.fluid}
@@ -93,7 +95,7 @@ const Contact = ({ content }) => {
             </a>
           </div>
         </div>
-        <Social width="9rem" padding="0.5rem 1.25rem" withIcon />
+        <Social width="9rem" padding="0.5rem 1.25rem" withIcon /> */}
       </StyledContentWrapper>
     </StyledSection>
   )
