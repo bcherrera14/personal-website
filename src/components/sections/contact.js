@@ -9,7 +9,7 @@ import { motion } from "framer-motion"
 import { useOnScreen } from "../../hooks"
 import ContentWrapper from "../../styles/contentWrapper"
 import Underlining from "../../styles/underlining"
-import Social from "../social"
+// import Social from "../social"
 
 const StyledSection = styled(motion.section)`
   width: 100%;
