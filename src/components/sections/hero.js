@@ -15,10 +15,8 @@ import { lightTheme, darkTheme } from "../../styles/theme"
 
 const StyledSection = styled.section`
   width: 100%;
-  height: 100vh;
-  background-image: url("https://images.unsplash.com/photo-1611207224899-1d6da7e9e483?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2090&q=80");
-  background-repeat: no-repeat;
-  background-size: auto;
+  height: auto;
+  background: ${({ theme }) => theme.colors.background};
 `
 
 const StyledContentWrapper = styled(ContentWrapper)`
