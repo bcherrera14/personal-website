@@ -6,7 +6,7 @@ module.exports = {
   siteDescription: "Full stack developer portfolio.",
   siteUrl: "https://bryan-herrera.com",
   siteLanguage: "en_US",
-  siteIcon: "content/square-bryan.jpg", // Relative to gatsby-config file
+  siteIcon: "./content/square-bryan.jpg", // Relative to gatsby-config file
   seoTitleSuffix: "Bryan Herrera", // SEO title syntax will be e.g. "Imprint - {seoTitleSuffix}"
 
   // -- THEME SETTINGS -----
