@@ -1,5 +1,4 @@
 import React from "react"
-import ContentWrapper from "../styles/contentWrapper"
 import StyledButton from "../styles/button"
 
 export default class MyForm extends React.Component {
