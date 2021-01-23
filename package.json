@@ -2,6 +2,10 @@
   "name": "gatsby-starter-portfolio-minimal",
   "description": "A clean, one-page portfolio using MDX",
   "version": "1.0.0",
+  "engines": {
+    "node": "14.15.4",
+    "npm": "6.14.10"
+  },
   "author": "Konstantin Münster <mail@konstantin.digital>",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.34",
