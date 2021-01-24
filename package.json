@@ -43,6 +43,7 @@
     "react-bootstrap": "^1.4.3",
     "react-dom": "^16.14.0",
     "react-helmet": "^6.1.0",
+    "react-hot-loader": "^4.13.0",
     "react-scripts": "^4.0.1",
     "react-visibility-sensor": "^5.1.1",
     "smooth-scroll": "^16.1.3",
