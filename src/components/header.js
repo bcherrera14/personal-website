@@ -93,8 +93,7 @@ const Header = () => {
   // Required for animation - start after the splashScreen sequence is done
   const controls = useAnimation()
   useEffect(() => {
-    if (isIntroDone)
-      controls.start({ opacity: 1, y: 0, transition: { delay: 0.2 } })
+    if (isIntroDone) controls.start({ opacity: 1, y: 0 })
   }, [isIntroDone, controls])
 
   let navigation

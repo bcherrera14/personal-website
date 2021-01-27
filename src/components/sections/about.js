@@ -77,10 +77,17 @@ const About = ({ content }) => {
 
   // Only trigger animations if the intro is done or disabled
   useEffect(() => {
-    if (isIntroDone) {
-      if (tOnScreen) tControls.start({ opacity: 1, y: 0 })
-      if (iOnScreen) iControls.start({ opacity: 1, x: 0 })
+    // if (isIntroDone) {
+    //   if (tOnScreen) tControls.start({ opacity: 1, y: 0 })
+    //   if (iOnScreen) iControls.start({ opacity: 1, x: 0 })
+    // }
+    const aboutLoadSequence = async () => {
+      if (isIntroDone) {
+        tControls.start({ opacity: 1, y: 0, transition: { delay: 0.2 } })
+        await iControls.start({ opacity: 1, x: 0, transition: { delay: 0.2 } })
+      }
     }
+    aboutLoadSequence()
   }, [isIntroDone, tControls, iControls, tOnScreen, iOnScreen])
 
   return (
