@@ -61,10 +61,10 @@ module.exports = {
       name: "Github",
       url: "https://github.com/bcherrera14",
     },
-    // {
-    //   name: "Medium",
-    //   url: "https://bcherrera.medium.com/",
-    // },
+    {
+      name: "Medium",
+      url: "https://bcherrera.medium.com/",
+    },
   ],
 
   //-- NAVIGATION SETTINGS -----
