@@ -5,6 +5,8 @@ import { MDXRenderer } from "gatsby-plugin-mdx"
 import Img from "gatsby-image"
 import VisibilitySensor from "react-visibility-sensor"
 import { motion } from "framer-motion"
+import expenseGIF from "../../../content/index/projects/expensetracker-app/expensetracker.gif"
+import ProjectGIF from "../Gif"
 
 import { useOnScreen } from "../../hooks"
 import Context from "../../context"
@@ -339,10 +341,7 @@ const Projects = ({ content }) => {
                   <VisibilitySensor
                     onChange={() => setVisibleProject(frontmatter.position)}
                   >
-                    <Img
-                      className="screenshot"
-                      fluid={frontmatter.screenshot.childImageSharp.fluid}
-                    />
+                    <ProjectGIF project={frontmatter.title} />
                   </VisibilitySensor>
                 </StyledProject>
               </VisibilitySensor>
